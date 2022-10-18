@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro MercadoLiebre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/register-styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="title">
+            <h1>Crea tu usuario</h1>
+            <div class="icon-user"><i class="fas fa-user"></i></div>
+        </div>
+        <form action="/" method="POST" class="form">
+            <div class="inputContainer">
+                <label for="fullName"></label>
+                <input type="text" name="fullName" id="fullName" placeholder="Nombre y apellido" class="input">
+            </div>
+            <div class="inputContainer">
+                <label for="fullUser"></label>
+                <input type="text" name="fullUser" id="fullUser" placeholder="Nombre de usuario" class="input" pattern="asdasazfad" title="Ingrese un usuario valido.">
+            </div>
+            <div class="inputContainer">
+                <label for="fullDate"></label>
+                <input type="date" name="fullDate" id="fullDate" class="input">
+            </div>
+            <div class="inputContainer">
+                <label for="adress"></label>
+                <input type="text" name="adress" id="adress" placeholder="Domicilio" class="input">
+            </div>
+            <div class="inputContainer">
+                <p>Elija tipo de usuario:</p>
+                <label>Comprador<input type="radio" name="userType" value="buyer"></label>
+                <label>Vendedor<input type="radio" name="userType" value="seller"></label>
+            </div>
+            <div class="inputContainer">
+                <p>Elija categorias de interes:</p>
+                <label>Electro<input type="checkbox" name="categories" value="electro"></label>
+                <label>Moda<input type="checkbox" name="categories" value="moda"></label>
+                <label>Hogar<input type="checkbox" name="categories" value="hogar"></label>
+                <label>Juguetria<input type="checkbox" name="categories" value="toys"></label>
+                <label>Vida sana<input type="checkbox" name="categories" value="salud"></label>
+            </div>
+            <div class="inputContainer">
+                <div class="foto">
+                    <label for="profilePhoto">
+                        <p>Foto de usuario</p>
+                    </label>
+                    <input type="file" accept=".jpg, .png, .jpeg" name="profilePhoto" id="profilePhoto">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="input">
+            </div>
+            <div class="inputContainer">
+                <label for="Confirmpassword"></label>
+                <input type="password" name="Confirmpassword" id="Confirmpassword" placeholder="Confirme contraseña"
+                    class="input">
+            </div>
+            <div>
+                <button type="submit" class="button">Enviar</button>
+                <button type="reset" class="button">Limpiar formulario</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
