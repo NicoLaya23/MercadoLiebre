@@ -16,10 +16,21 @@
             <div class="logo">
                 <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
             </div>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar productos, marcas y más</div>
-                <div class="submit"><i class="fa fa-search"></i></div>
+            <div id="navlist">
+                <div class="search">
+                    <form action="#">
+                        <input type="text" placeholder="Buscar productos, marcas y más" name="search"
+                            style="text-align: center;">
+                        <div>
+                            <button>
+                                <i class="fa fa-search">
+                                </i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
+            <!-- No pude poner el boton al costado de la barra. -->
             <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         <nav class="navbar">
@@ -30,14 +41,14 @@
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-            </div> 
+            </div>
             <div class="navbar-der">
                 <ul>
                     <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                     <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
-            </div> 
+            </div>
         </nav>
         <div class="burger-menu">
             <i class="fa fa-bars burger"></i>
@@ -58,7 +69,9 @@
                             <p class="price">$6.770</p>
                             <p class="discount">40% off</p>
                         </div>
-                        <h4 class="description">Cafetera Moulinex</h4>
+                        <div class="desc-container">
+                            <h4 class="description">Cafetera Moulinex</h4>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -148,30 +161,34 @@
             </div>
         </section>
     </main>
-    <footer class="center-justified" style="text-align: center;">
-        <div class="icono-pie"><i class="fas fa-credit-card"></i></div>
-        <div style="font-size: 12px;">
-            <p style="font-weight: bold;">Pagá con tarjeta o en efectivo</p>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
-                seguro!</p>
+    <footer>
+        <div class="pie-container">
+            <div style="padding: 30px;">
+                <div class="icono-pie"><i class="fas fa-credit-card"></i></div>
+                <div class="pie-text" style="font-size: 12px;  text-align: center;">
+                    <p class="pie" style="font-weight: bold;">Pagá con tarjeta o en efectivo</p>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                        siempre es seguro!</p>
+                </div>
+            </div>
+            <div class="padding: 30px;">
+                <div class="icono-pie"><i class="fas fa-gift"></i></div>
+                <div class="pie-text" style="font-size: 12px; text-align: center;">
+                    <p style="font-weight: bold;">Envío gratis desde $ 2.500</p>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es
+                        unbeneficio de Mercado Puntos.</p>
+                </div>
+            </div>
+            <div style="padding: 30px;">
+                <div class="icono-pie"><i class="fas fa-user-shield"></i></div>
+                <div class="pie-text" style="font-size: 12px; text-align: center;">
+                    <p style="font-weight: bold;">Seguridad, de principio a fin</p>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás
+                        siempre protegid@.</p>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="icono-pie"><i class="fas fa-gift"></i></div>
-        <div style="font-size: 12px;">
-            <p style="font-weight: bold;">Envío gratis desde $ 2.500</p>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
-                Mercado Puntos.</p>
-        </div>
-        <br>
-        <div class="icono-pie"><i class="fas fa-user-shield"></i></div>
-        <div style="font-size: 12px;">
-            <p style="font-weight: bold;">Seguridad, de principio a fin</p>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
-                protegid@.</p>
-            <p style="font-weight: bold;">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </div>
+        <div style="padding: 18px; text-align: center;">Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
     </footer>
-
 </body>
-
 </html>

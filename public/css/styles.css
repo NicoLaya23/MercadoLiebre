@@ -65,6 +65,7 @@ header div.top-header p{
 }
 .top-header{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .logo{
@@ -99,16 +100,16 @@ div.burger-menu i{
     font-weight: normal;
 }
 
-h3,
 .description{
+    display: block;
+    /* margin-top: 20px; Esto lo quito por el hecho de que me queda muy grande la caja con la descripcion precio y descuento, la misma me queda mal en 
+    los productos Samsung Galaxy S10 por lo que creo es el tamaño del texto que me saca de lugar la descripcion. Para quedar de mejor manera en lo visual 
+    lo saco. En el readme.md de github dejo capturas de lo que era. */
     color: #666;
-}
-
-.description{
-    margin-top: 20px;
+    opacity: 0;
 }
 .description:hover{
-
+    opacity: 1;
 }
 
 section.banner img{
@@ -142,9 +143,13 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute; /* TE LO DAN CON POSITION ABOSULUTE PERO TE LOS DEJA A TODOS EN LA PARTE DE ARRIBA, CON INHERIT LO DEJA EN EL LUGAR. AHORA VI QUE MAS ADELANTE SE VA A VER....*/
+    position: absolute; 
     right: 20px;
     top: -15px;
+    transition: infinite;
+    }
+    main section article i:hover{
+        transform: rotate(-0.25turn);
     }
 
 main section h3{
@@ -177,6 +182,56 @@ article div.main-article{
     display: flex;
     flex-direction: column;
 }
+.center-justified{
+    display: flex;
+    text-align: justify;
+    margin: 0 auto;
+    width: 15em;
+}
+.icono-pie{
+    text-align: center;
+    font-size: 20px;
+    color: #2c92ff;
+}
+.pie-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pie-text{
+    width: 100%;
+}
+#navlist {
+    /* background-color: #0074D9; */
+    display: flex;
+    border-radius: 5px;
+
+}
+.search input{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+}
+      
+.search{
+
+    margin:7px;
+}
+      
+.search button{
+    background-color: #0074D9;
+    color: #f2f2f2;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 15px;
+} 
+
 
 @media (min-width: 361px){
     main section article .description{
@@ -197,6 +252,9 @@ article div.main-article{
 }
 
 @media (min-width: 769px){
+    main section article .description{
+        display: block;
+    }
     .products article{
         flex-direction: row;
         flex-wrap: wrap;
@@ -228,4 +286,3 @@ article div.main-article{
     }
 
 }
-/*PONE QUE LAS MEDIAS QUIERIES SEAN DESDE 0 A 425PX MOVIL, 426PX A 768PX TABLET Y EN ADELANTE DESKTOP*/
