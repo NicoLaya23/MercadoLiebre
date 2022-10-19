@@ -20,5 +20,5 @@ app.get(("/login"), (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 });
 app.post(("/"), (req, res)=>{
-    return res.send(req.body);
+    res.sendFile(path.resolve(__dirname, "./views/home.html"))
 });
